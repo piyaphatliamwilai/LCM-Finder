@@ -23,16 +23,24 @@ while (check != check2):
         check = check + number1
 
         if debug_mode == "Y":
-            print(check ,"is lower adding ", check, "(", number1, ")")
+            print(check2 ,"is higher adding ", check, "(", number1, ")")
     
     elif (check2 < check):
         check2 = check2 + number2
 
         if debug_mode == "Y":
-            print(check2 ,"is lower adding", number2, "(", number2, ")")
-
+            print(check ,"is higher adding ", check2, "(", number2, ")")
+            
 if (check == check2):
   print(check)
-  
- while 3 > 2:
-  time.sleep(0.1)
+
+  if debug_mode == "Y":
+    print("same answer detected")
+
+elif (check2 == check):
+  print(check2)
+  if debug_mode == "Y":
+    print("same answer detected")
+    
+while 3 > 2:
+    time.sleep(1)
